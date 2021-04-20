@@ -2,7 +2,7 @@
 
 [original Installation Guide (short version below)](https://github.com/slatedocs/slate/wiki/Using-Slate-Natively)
 
-The documentation from the build folder is hosted on https://jschoedl.eu.pythonanywhere.com/docs/neseps.
+The documentation from the build folder is hosted on https://jschoedl.eu.pythonanywhere.com/docs/neseps/.
 ## Installation for Native Usage
 
 ### Installing Dependencies on Linux
