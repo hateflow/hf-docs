@@ -291,7 +291,7 @@
     </script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;ruby&quot;,&quot;python&quot;,&quot;javascript&quot;]">
+  <body class="index" data-languages="[&quot;shell&quot;,&quot;python&quot;,&quot;javascript&quot;,&quot;brainfuck&quot;]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -302,9 +302,9 @@
       <img src="images/logo-1e815a84.png" class="logo" alt="" />
         <div class="lang-selector">
               <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="ruby">ruby</a>
               <a href="#" data-language-name="python">python</a>
               <a href="#" data-language-name="javascript">javascript</a>
+              <a href="#" data-language-name="brainfuck">brainfuck</a>
         </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
@@ -315,7 +315,7 @@
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
           </li>
           <li>
-            <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
+            <a href="#basic-api-calls" class="toc-h1 toc-link" data-title="Basic API Calls">Basic API Calls</a>
           </li>
           <li>
             <a href="#kittens" class="toc-h1 toc-link" data-title="Kittens">Kittens</a>
@@ -336,7 +336,7 @@
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='#'>Sign Up for a Developer Key</a></li>
+            <li><a href='https://t.me/Jakob_Schoedl'>Sign Up for a Developer Key</a></li>
             <li><a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a></li>
         </ul>
     </div>
@@ -344,23 +344,19 @@
       <div class="dark-box"></div>
       <div class="content">
         <h1 id='introduction'>Introduction</h1>
-<p>Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.</p>
+<p>Welcome to the neseps° API documentation! Our REST API can help you to cope with all sorts of toxic comments on your web page, app or whatever you need it for.</p>
 
-<p>We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
+<p>This site contains code samples for Shell, Python, JavaScript and Brainfuck. You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
 
-<p>This example API documentation page was created with <a href="https://github.com/slatedocs/slate">Slate</a>. Feel free to edit it and use it as a base for your own API&#39;s documentation.</p>
-<h1 id='authentication'>Authentication</h1>
-<blockquote>
-<p>To authorize, use this code:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight ruby tab-ruby"><code><span class="nb">require</span> <span class="s1">'kittn'</span>
+<p>Up to now, neseps° is in beta and an official pricing scheme is not yet designed. Feel free to <a href="https://t.me/Jakob_Schoedl">contact us</a> to get an API key. The URL, methods and parameters can and will change in the future.</p>
+<h1 id='basic-api-calls'>Basic API Calls</h1><div class="highlight"><pre class="highlight brainfuck tab-brainfuck"><code><span class="nf">+</span><span class="p">[</span><span class="nf">-------</span><span class="nb">&gt;</span><span class="nf">++</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">++.</span><span class="p">[</span><span class="nf">-----</span><span class="nb">&gt;</span><span class="nf">++</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">+.--</span><span class="p">[</span><span class="nf">---</span><span class="nb">&gt;</span><span class="nf">+</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">--.+.+++</span><span class="p">[</span><span class="nf">-</span><span class="nb">&gt;</span><span class="nf">+++</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">.--</span><span class="p">[</span><span class="nf">---</span><span class="nb">&gt;</span><span class="nf">+</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">-.--</span><span class="p">[</span><span class="nf">-</span><span class="nb">&gt;</span><span class="nf">++++</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">+.----------.++++++.---.</span><span class="p">[</span><span class="nf">--</span><span class="nb">&gt;</span><span class="nf">+++++</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">+++.</span><span class="p">[</span><span class="nf">-</span><span class="nb">&gt;</span><span class="nf">++</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">+.++</span><span class="p">[</span><span class="nf">-</span><span class="nb">&gt;</span><span class="nf">+++++</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">+.-------.-</span><span class="p">[</span><span class="nf">-</span><span class="nb">&gt;</span><span class="nf">++++</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">.-</span><span class="p">[</span><span class="nf">---</span><span class="nb">&gt;</span><span class="nf">++</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">+.------.</span><span class="p">[</span><span class="nf">---</span><span class="nb">&gt;</span><span class="nf">+</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">++.-</span><span class="p">[</span><span class="nf">----</span><span class="nb">&gt;</span><span class="nf">+</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">++.-</span><span class="p">[</span><span class="nf">---</span><span class="nb">&gt;</span><span class="nf">++</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">--.---.+++++++++++++.-------------.+++</span><span class="p">[</span><span class="nf">-</span><span class="nb">&gt;</span><span class="nf">+++</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">++.</span><span class="p">[</span><span class="nf">--</span><span class="nb">&gt;</span><span class="nf">+</span><span class="nb">&lt;</span><span class="p">]</span><span class="nb">&gt;</span><span class="nf">+++.</span><span class="c1">
+</span></code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="no">Kittn</span><span class="o">::</span><span class="no">APIClient</span><span class="p">.</span><span class="nf">authorize!</span><span class="p">(</span><span class="s1">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">kittn</span>
+<span class="n">BASE_URL</span> <span class="o">=</span> <span class="s">"https://jschoedl.eu.pythonanywhere.com/apis/neseps/"</span>
+<span class="n">API_KEY</span> <span class="o">=</span> <span class="s">"&lt;your-key-here&gt;"</span>
 
-<span class="n">api</span> <span class="o">=</span> <span class="n">kittn</span><span class="p">.</span><span class="n">authorize</span><span class="p">(</span><span class="s">'meowmeowmeow'</span><span class="p">)</span>
-</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code><span class="c"># With shell, you can just pass the correct header with each request</span>
-curl <span class="s2">"api_endpoint_here"</span> <span class="se">\</span>
+<span class="n">res</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">BASE_URL</span><span class="si">}</span><span class="s">authorize?key=</span><span class="si">{</span><span class="n">API_KEY</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"api_endpoint_here"</span> <span class="se">\</span>
   <span class="nt">-H</span> <span class="s2">"Authorization: meowmeowmeow"</span>
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="kd">const</span> <span class="nx">kittn</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="dl">'</span><span class="s1">kittn</span><span class="dl">'</span><span class="p">);</span>
 
@@ -585,9 +581,9 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
       <div class="dark-box">
           <div class="lang-selector">
                 <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="ruby">ruby</a>
                 <a href="#" data-language-name="python">python</a>
                 <a href="#" data-language-name="javascript">javascript</a>
+                <a href="#" data-language-name="brainfuck">brainfuck</a>
           </div>
       </div>
     </div>
