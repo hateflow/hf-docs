@@ -3,12 +3,12 @@ title: API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell
-  - ruby
   - python
   - javascript
+  - brainfuck
 
 toc_footers:
-  - <a href='#'>Sign Up for a Developer Key</a>
+  - <a href='https://t.me/Jakob_Schoedl'>Sign Up for a Developer Key</a>
   - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
 
 includes:
@@ -21,30 +21,28 @@ code_clipboard: true
 
 # Introduction
 
-Welcome to the Kittn API! You can use our API to access Kittn API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the neseps° API documentation! Our REST API can help you to cope with all sorts of toxic comments on your web page, app or whatever you need it for.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+This site contains code samples for Shell, Python, JavaScript and Brainfuck. You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
+Up to now, neseps° is in beta and an official pricing scheme is not yet designed. Feel free to [contact us](https://t.me/Jakob_Schoedl) to get an API key. The URL, methods and parameters can and will change in the future.
 
-# Authentication
+# Basic API Calls
 
-> To authorize, use this code:
-
-```ruby
-require 'kittn'
-
-api = Kittn::APIClient.authorize!('meowmeowmeow')
+```brainfuck
++[------->++<]>++.[----->++<]>+.--[--->+<]>--.+.+++[->+++<]>.--[--->+<]>-.--[->++++<]>+.----------.++++++.---.[-->+++++<]>+++.[->++<]>+.++[->+++++<]>+.-------.-[->++++<]>.-[--->++<]>+.------.[--->+<]>++.-[---->+<]>++.-[--->++<]>--.---.+++++++++++++.-------------.+++[->+++<]>++.[-->+<]>+++.
 ```
 
 ```python
-import kittn
+import requests
 
-api = kittn.authorize('meowmeowmeow')
+BASE_URL = "https://jschoedl.eu.pythonanywhere.com/apis/neseps/"
+API_KEY = "<your-key-here>"
+
+res = requests.get(f"{BASE_URL}authorize?key={API_KEY}")
 ```
 
 ```shell
-# With shell, you can just pass the correct header with each request
 curl "api_endpoint_here" \
   -H "Authorization: meowmeowmeow"
 ```
