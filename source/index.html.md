@@ -38,7 +38,7 @@ the future. </aside>
 # Toxicity Checks
 
 ## simpleCheck
-
+****
 > This sample checks the example text 'This is a nice comment.'
 
 ```shell
@@ -92,6 +92,7 @@ else:
 
 The sent comment is checked for all different attributes using Machine Learning.
 
-Parameter | Description
---------- | -----------
-text | The text (e.g. of a comment) to be checked
+Parameter | Default | Description
+--------- | ------- | -----------
+text      |         | The text (e.g. of a comment) to be checked
+probabilities | 0   | If 1, include floating point numbers between 0 and 1 instead of integers. The numbers represent the probability of the attribute being true.

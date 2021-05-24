@@ -347,6 +347,8 @@ to contact us in order to get an API key. </aside>
 <aside class="warning">The URL, methods and parameters can and will change in
 the future. </aside>
 <h1 id='toxicity-checks'>Toxicity Checks</h1><h2 id='simplecheck'>simpleCheck</h2>
+<hr>
+
 <blockquote>
 <p>This sample checks the example text &#39;This is a nice comment.&#39;</p>
 </blockquote>
@@ -392,12 +394,19 @@ the future. </aside>
 <table><thead>
 <tr>
 <th>Parameter</th>
+<th>Default</th>
 <th>Description</th>
 </tr>
 </thead><tbody>
 <tr>
 <td>text</td>
+<td></td>
 <td>The text (e.g. of a comment) to be checked</td>
+</tr>
+<tr>
+<td>probabilities</td>
+<td>0</td>
+<td>If 1, include floating point numbers between 0 and 1 instead of integers. The numbers represent the probability of the attribute being true.</td>
 </tr>
 </tbody></table>
 <h1 id='response-codes'>Response Codes</h1>
