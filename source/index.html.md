@@ -42,7 +42,7 @@ the future. </aside>
 > This sample checks the example text 'This is a nice comment.'
 
 ```shell
-curl "https://jschoedl.eu.pythonanywhere.com/apis/neseps/simpleCheck?text=This%20is%20a%20nice%20comment."
+curl "http://helga.hateflow.de/simpleCheck?text=This%20is%20a%20nice%20comment."
 ```
 
 ```python
@@ -50,7 +50,7 @@ import requests
 import json
 
 # The URL could change in the future - make sure to keep it replaceable.
-API_URL = "https://jschoedl.eu.pythonanywhere.com/apis/neseps/"
+API_URL = "http://helga.hateflow.de/apis/neseps/"
 
 comment_text = "This is a nice comment."
 response = requests.get(f"{API_URL}simpleCheck?text={comment_text}")

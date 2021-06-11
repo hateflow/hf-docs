@@ -352,12 +352,12 @@ the future. </aside>
 <blockquote>
 <p>This sample checks the example text &#39;This is a nice comment.&#39;</p>
 </blockquote>
-<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://jschoedl.eu.pythonanywhere.com/apis/neseps/simpleCheck?text=This%20is%20a%20nice%20comment."</span>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"http://helga.hateflow.de/simpleCheck?text=This%20is%20a%20nice%20comment."</span>
 </code></pre></div><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
 <span class="kn">import</span> <span class="nn">json</span>
 
 <span class="c1"># The URL could change in the future - make sure to keep it replaceable.
-</span><span class="n">API_URL</span> <span class="o">=</span> <span class="s">"https://jschoedl.eu.pythonanywhere.com/apis/neseps/"</span>
+</span><span class="n">API_URL</span> <span class="o">=</span> <span class="s">"http://helga.hateflow.de/apis/neseps/"</span>
 
 <span class="n">comment_text</span> <span class="o">=</span> <span class="s">"This is a nice comment."</span>
 <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="sa">f</span><span class="s">"</span><span class="si">{</span><span class="n">API_URL</span><span class="si">}</span><span class="s">simpleCheck?text=</span><span class="si">{</span><span class="n">comment_text</span><span class="si">}</span><span class="s">"</span><span class="p">)</span>
