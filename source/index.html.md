@@ -42,7 +42,7 @@ the future. </aside>
 > This sample checks the example text 'This is a nice comment.'
 
 ```shell
-curl "http://helga.hateflow.de/simpleCheck?text=This%20is%20a%20nice%20comment."
+curl "http://api.hateflow.de/simpleCheck?text=This%20is%20a%20nice%20comment."
 ```
 
 ```python
@@ -50,7 +50,7 @@ import requests
 import json
 
 # The URL could change in the future - make sure to keep it replaceable.
-API_URL = "http://helga.hateflow.de/apis/neseps/"
+API_URL = "http://api.hateflow.de/apis/neseps/"
 
 comment_text = "This is a nice comment."
 response = requests.get(f"{API_URL}simpleCheck?text={comment_text}")
@@ -62,7 +62,12 @@ else:
 ```
 
 ```javascript
-// no sample code up to now ¯\_(ツ)_/¯
+const ApiRequest = async (text) => {
+    const response = await fetch("http://api.hateflow.de/simpleCheck?text=" + text);
+    const myJson = await response.json();
+        // do something with the JSON data ('myJson')
+    }
+ApiRequest("This is a nice comment.");
 ```
 
 ```brainfuck
