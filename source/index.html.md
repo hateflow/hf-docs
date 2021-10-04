@@ -29,8 +29,6 @@ web page, app or whatever you need it for.
 This site contains code samples for Shell, Python and JavaScript. You can view code examples in the dark area to the
 right, and you can switch the programming language of the examples with the tabs in the top right.
 
-<aside class="notice">Up to now, HateFlow is in beta and an official pricing scheme yet to be designed. Feel free
-to contact us in order to get an API key. </aside>
 <aside class="warning">The URL, methods and parameters can and will change in
 the future. </aside>
 
